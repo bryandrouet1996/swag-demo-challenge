@@ -19,7 +19,7 @@ Instrucciones para ejecutar las pruebas:
 
 3. Instrucciones para ejecutar los test
 
--Dirigirse a la ubicacion java/karate/TestRunner y pulsar el icono de iniciar pruebas esto arrancara inmediatamente con las pruebas
+-Dirigirse a la ubicacion java/com/swag/pe/Runner.java y pulsar el icono de iniciar pruebas esto arrancara inmediatamente con las pruebas
 -Para tener un reportes de las pruebas hacemos click en el icono de grale a mano derecha y hacemos click en el botón execute gradle task y ejecutamos el comando: gradle aggregate.
 -Despues hacemos click en en el enlace que se muestra con el siguiente mensaje:
  Main report: file:///C:/Users/Admin/Desktop/challenge/sauce-demo-test/target/site/serenity/index.html

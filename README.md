@@ -1,30 +1,28 @@
 Instrucciones para ejecutar las pruebas:
 
 1. Clonar el repositorio:
-   git clone https://github.com/bryandrouet1996/karate-test-challenge
+   git clone https://github.com/bryandrouet1996/swag-demo-challenge
 
 2. Navegar al directorio del proyecto:
-   cd karate-test-challenge
+   cd swag-demo-challenge
 
 3. Ejecutar las pruebas con Maven:
-   mvn test
+   gradle aggregate
 
-Versiones utilizadas:
+    - Maquina local con el sistema operativo Windows 10
+    - IDE IntelliJ version 2024.2.1
+    - Gradle version 7.6.1
+    - JDK versión 17
 
-	- Maquina local con el sistema operativo Windows 10
-	- IDE IntelliJ version 2024.2.1
-	- Maven version 4.0.0
-	- JDK versión 17
+2. Comandos de instalación
+   NINGUNO
 
+3. Instrucciones para ejecutar los test
 
-4. Instrucciones para ejecutar los test
+-Dirigirse a la ubicacion java/com/swag/pe/Runner.java y pulsar el icono de iniciar pruebas esto arrancara inmediatamente con las pruebas
+-Para tener un reportes de las pruebas hacemos click en el icono de grale a mano derecha y hacemos click en el botón execute gradle task y ejecutamos el comando: gradle aggregate.
+-Despues hacemos click en en el enlace que se muestra con el siguiente mensaje:
+Main report: file:///C:/Users/Admin/Desktop/challenge/sauce-demo-test/target/site/serenity/index.html
 
--Dirigirse a la ubicacion java/petstore.TestRunner y pulsar el icono de iniciar pruebas esto arrancara inmediatamente con las pruebas y mostrara por terminal sus resultados.
-- Para visualizar el reporte de karate hagamos click en el enlace que se muestra a continuacion una ejecutado las pruebas desde el runner
-  HTML report: (paste into browser to view) | Karate version: 1.5.0
-  petstore-karate-test/target/karate-reports/karate-summary.html
-  ===================================================================
-
-
-5. Información adicional
-   Para la visualizacion de las features nos desp
+4. Información adicional
+   NINGUNA
