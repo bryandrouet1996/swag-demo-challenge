@@ -1,0 +1,21 @@
+# Conclusiones
+
+1. **Facilidad de Uso**:
+   - La implementación de las pruebas automatizadas con Serenity BDD permite una fácil lectura y mantenimiento del código.
+   - La estructura modular de las tareas facilita la reutilización de componentes en diferentes escenarios de prueba.
+
+2. **Gestión de Drivers**:
+   - WebDriverManager simplifica la gestión de las versiones de los drivers, eliminando la necesidad de descargar y configurar manualmente los drivers de los navegadores.
+
+3. **Reportes Detallados**:
+   - Los reportes generados por Serenity BDD proporcionan una visión clara y detallada de los resultados de las pruebas, lo que ayuda en la identificación y resolución de problemas.
+
+4. **Compatibilidad**:
+   - La integración con Selenium WebDriver permite la automatización de pruebas en diferentes navegadores, asegurando la compatibilidad y funcionalidad de la aplicación web en múltiples entornos.
+
+5. **Desafíos Encontrados**:
+   - La configuración inicial de los drivers y la compatibilidad de versiones pueden ser un desafío, pero se resolvieron utilizando WebDriverManager.
+   - La gestión de conexiones WebSocket puede presentar problemas en ciertos entornos, lo que requiere ajustes en la configuración del sistema y la red.
+
+6. **Recomendaciones**:
+   - Mantener actualizadas las versiones de los navegadores y los drivers para evitar problemas de compatibilidad.
