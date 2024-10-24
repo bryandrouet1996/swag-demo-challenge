@@ -1,7 +1,7 @@
 @Suite @ShoppingCart
-Feature: CP0 - Validar carrito de compras
+Feature: CP02 - Validar carrito de compras
 
-  Background: : Realizar 2 validaciones en el carrito de compras
+  Background: : Realizar 3 validaciones en el carrito de compras
     Given el ususario navega al sitio web
     When ingresa credenciales validas
 

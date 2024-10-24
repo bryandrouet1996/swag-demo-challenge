@@ -38,18 +38,17 @@ public class LoginDef {
     public void systemShowProductsModule(){
         Assert.assertTrue(validate.titleIsVisible());
     }
-    @When("ingresa credenciales invalidas")
-    public void userLoginWithInvalidCredentials(){
-        login.tyUsername("standard_user");
-        login.typePassword("12345");
+    @When("ingresa credenciales invalidas usuario \"<usuario>\" y la contraseña \"<contrasena>\"")
+    public void userLoginWithInvalidCredentials(String usuario, String contrasena) {
+        // Aquí los valores de usuario y contrasena ya contienen los valores de la tabla
+        login.tyUsername(usuario);
+        login.typePassword(contrasena);
         login.clickLogin();
-
     }
     @Then("la aplicacion deberia mostrar un mensaje de error")
     public void systemShowErrorMessage(){
         Assert.assertTrue(validate.errorMessageIsDisplayed());
     }
-
 
 
 }
