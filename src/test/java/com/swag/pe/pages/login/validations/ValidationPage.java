@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ValidationPage extends PageObject {
 
-    @FindBy(xpath = "//div[@class='product_label']")
+    @FindBy(xpath = "//div[@id='page_wrapper']")
     protected WebElementFacade lbl_product;
 
     @FindBy(xpath = "//h3[@data-test='error' and text()='Epic sadface: Username and password do not match any user in this service']")
@@ -17,7 +17,7 @@ public class ValidationPage extends PageObject {
     @FindBy(xpath = "//div[@class='inventory_item_name']")
     protected List<WebElementFacade> productsList;
 
-    @FindBy(xpath = "//h2[text='Thank you for your order!']")
+    @FindBy(xpath = "//h2[@class='complete-header']")
     protected WebElementFacade lbl_order;
 
 

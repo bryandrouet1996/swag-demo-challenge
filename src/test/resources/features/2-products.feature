@@ -3,7 +3,7 @@ Feature: CP02 - Validar carrito de compras
 
   Background: : Realizar 3 validaciones en el carrito de compras
     Given el ususario navega al sitio web
-    When ingresa credenciales validas
+    When ingresa credenciales validas usuario "standard_user" y la contraseña "secret_sauce"
 
     @ShoppingCartAdd
     Scenario: 1 - Agregar los productos en el carrito de compras

@@ -26,10 +26,10 @@ public class LoginDef {
 
     }
 
-    @When("ingresa credenciales validas")
-    public void userLoginWithValidCredentials(){
-        login.tyUsername("standard_user");
-        login.typePassword("secret_sauce");
+    @When("ingresa credenciales validas usuario {string} y la contraseña {string}")
+    public void userLoginWithValidCredentials(String user, String password){
+        login.tyUsername(user);
+        login.typePassword(password);
         login.clickLogin();
 
     }
@@ -38,7 +38,7 @@ public class LoginDef {
     public void systemShowProductsModule(){
         Assert.assertTrue(validate.titleIsVisible());
     }
-    @When("ingresa credenciales invalidas usuario \"<usuario>\" y la contraseña \"<contrasena>\"")
+    @When("ingresa credenciales invalidas usuario {string} y la contraseña {string}")
     public void userLoginWithInvalidCredentials(String usuario, String contrasena) {
         // Aquí los valores de usuario y contrasena ya contienen los valores de la tabla
         login.tyUsername(usuario);
