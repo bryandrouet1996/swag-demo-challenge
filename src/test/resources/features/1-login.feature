@@ -19,7 +19,7 @@ Feature: CP01 - Validar inicio de sesion
       When ingresa credenciales invalidas usuario "<usuario>" y la contraseña "<contrasena>"
         Then la aplicacion deberia mostrar un mensaje de error
       Examples:
-        | usuario    | contraseña  | mensaje                               |
-        | admin      | 12345       | Bienvenido, admin!                      |
-        | usuario1   | pass123     | Usuario o contraseña incorrectos.       |
+        | usuario  | contraseña | mensaje                           |
+        | admin    | 12345      | Bienvenido, admin!                |
+        | usuario1 | pass123    | Usuario o contraseña incorrectos. |
 

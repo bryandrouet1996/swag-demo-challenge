@@ -39,12 +39,12 @@ public class ShoppingDef {
         Assert.assertTrue(validate.shoppingCartIsEmpty());
     }
 
-    @When("completa todo el registro de orden")
-    public void userCompleteOrder(){
+    @When("completa todo el registro de orden datos como {string} {string} {string}")
+    public void userCompleteOrder(String firstname, String lastname, String postal){
         shoppingCart.clickcheckoutButton();
-        shoppingCart.typeFirstName("Bryan");
-        shoppingCart.typeLastName("Druet");
-        shoppingCart.typePostal("ECU 080103");
+        shoppingCart.typeFirstName(firstname);
+        shoppingCart.typeLastName(lastname);
+        shoppingCart.typePostal(postal);
         shoppingCart.clickContinue();
         shoppingCart.clickFinish();
     }
